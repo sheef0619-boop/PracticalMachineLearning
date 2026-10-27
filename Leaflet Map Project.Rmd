@@ -1,0 +1,22 @@
+---
+title: "Leaflet Map Project"
+output: html_document
+---
+
+## Date
+
+October 27, 2026
+
+## My Interactive Map
+
+```{r, echo=FALSE}
+library(leaflet)
+
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(
+    lng = 51.5310,
+    lat = 25.2854,
+    popup = "Doha, Qatar"
+  )
+```
